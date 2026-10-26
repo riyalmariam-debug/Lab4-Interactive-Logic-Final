@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find a thoughtful next step for your home search with Mariam Riyal's interactive planning experience.">
+  <title>My Next Move | Mariam Riyal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header><a href="#top" class="brand"><span class="monogram" aria-hidden="true">MR</span><span>MARIAM RIYAL<small>A THOUGHTFUL APPROACH TO REAL ESTATE</small></span></a><span class="header-note">YOUR NEXT CHAPTER</span></header>
+<main id="top">
+  <section class="intro"><div><p class="eyebrow">A LITTLE CLARITY GOES A LONG WAY</p><h1>My next<br><em>move.</em></h1></div><div class="intro-copy"><p>You don’t need every answer.<br>Just a place to start.</p><p class="muted">Tell us where you are in your home search.<br>Find a next step that fits your pace.</p></div></section>
+  <section class="workspace" aria-label="Personalized home search planner">
+    <aside><p class="eyebrow">THE JOURNEY</p><ol><li id="stage1" class="active"><span>01</span>Your starting point</li><li id="stage2"><span>02</span>Your next move</li><li id="stage3"><span>03</span>Make it happen</li></ol><p class="aside-note">Small steps.<br><em>Meaningful progress.</em></p></aside>
+    <div class="planner">
+      <section id="questions" aria-labelledby="formTitle"><p class="eyebrow">01 / YOUR STARTING POINT</p><h2 id="formTitle">Where are you right now?</h2><p class="muted">Two quick answers. A more personal plan.</p>
+      <form id="moveForm">
+        <label for="timeline">When would you like to start your search?</label>
+        <select id="timeline" required><option value="">Choose your timeline</option><option value="soon">Within the next 3 months</option><option value="later">More than 3 months from now</option><option value="unsure">I’m not sure yet</option></select>
+        <fieldset><legend>Have you made a home wish list?</legend><p class="field-note">Think about location, space, and everyday needs.</p><div class="radio-options"><label><input type="radio" name="wishList" value="yes" required> Yes, I know my priorities</label><label><input type="radio" name="wishList" value="no"> Not yet, I’m figuring it out</label></div></fieldset>
+        <button class="primary" type="submit">Find my next move <span aria-hidden="true">↗</span></button>
+      </form></section>
+      <section id="result" hidden aria-labelledby="resultTitle"><div class="result-heading"><p class="eyebrow" id="resultLabel"></p><span id="outcomeNumber" aria-hidden="true"></span></div><h2 id="resultTitle" tabindex="-1"></h2><p id="resultText" class="result-text"></p><p id="answerSummary" class="answer-summary"></p><p id="changeNote" class="change-note" hidden></p>
+      <div class="action-plan"><p class="eyebrow">03 / YOUR SMALL STEPS</p><p class="field-note">Check off a step when you’ve done it.</p><div id="checklist"></div><div class="progress-track"><span id="progressBar"></span></div><p id="completionText" role="status" aria-live="polite"></p></div>
+      <div class="result-actions"><button type="button" id="editButton" class="secondary">Change my answers</button><button type="button" id="resetButton" class="text-button">Start fresh ↺</button></div></section>
+      <p class="session-note">Your answers and checked steps stay only while this page is open. Nothing is sent.</p>
+    </div>
+  </section>
+  <section class="paths" aria-labelledby="pathsTitle"><p class="eyebrow">EVERY STARTING POINT COUNTS</p><h2 id="pathsTitle">Three paths. <em>Your pace.</em></h2><div class="path-grid"><article><span>01 / EXPLORE</span><h3>Find your direction.</h3><p>Still exploring or not sure when to move? Start with the places and routines that matter to you.</p></article><article><span>02 / PREPARE</span><h3>Define your priorities.</h3><p>Thinking about searching soon, but no wish list yet? Give your search a little structure first.</p></article><article><span>03 / PLAN</span><h3>Turn clarity into action.</h3><p>Searching soon with a wish list in hand? Organize the questions and details for your first showings.</p></article></div></section>
+</main>
+<footer><strong>MARIAM RIYAL</strong><p>Real estate, with a human perspective.</p><small>An educational home-search planner. These suggestions do not assess financial readiness or eligibility.</small></footer>
+</body>
+</html>
